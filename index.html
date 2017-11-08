@@ -6,14 +6,22 @@
     </head>
       <body>
         <nav></nav>
-        <header>Welcome!</header>  
-        <br>
-        <article></article>
-        <button id="registerButton" href="register.html">Register</button>
-        <br>
-        <input id="emailInput"></input>
-        <input id="userNameInput"></input>
-        <button id="loginButton">Login</button>
+      <article id="welcomePage">
+        <h1>Welcome!</h1>  
+      </article>
+      
+      <form id="regForm">
+          <div id="userName" class="required"> Username *</div>
+          <input id="check_userName" type="text" name="username" required>
+          <br>
+          <div id="email"></div> Email address *</div>
+          <br>
+          <input id="check_email" type="text" name="email" required>
+          <br>
+          <button id="submitRegistration">Register</button>
+          <button id="loginDash">Login</button>
+      </form>
+
         <footer></footer>
       <script src='./build/bundle.js'></script>
       </body>

@@ -1,28 +1,26 @@
 console.log("register user/email")
+// import userfacotry
+const userInputData = require("./registerData")
+
 
 let verification = () => {
-    // check required username field for entry
-    let checkUser = () => {
-    console.log("username checked")
-    if (document.getElementsById("check_userName")[0].value === ""){
-            alert("Please enter your username"); //replace with toaster laster
+    // check required username and email field for entry
+        console.log("username checked")
+        if (document.getElementById("check_userName").value === ""
+        && document.getElementById("check_email").value === "@"){
+            alert("Please check yer shit"); //replace with toaster later
             return false;
-        }
+
+            // check email for unique entry in database somehow?
+            // check username for unique entry in database somehow?
+            //call register data
+        } else (userInputData())
     }
-// check required email field for entry
-    let checkEmail = () => {
-        console.log("email checked")
-        if (document.getElementsById("check_email")[0].value === ""){
-                alert("Please enter your email"); //replace with toaster laster
-                return false;
-            }
-        }
-    let button = document.getElementsById("submitRegistration")[0]
-    button.addEventListener("click", checkUser, checkEmail)
-}
 
-// check email for unique entry in database somehow?
 
-// check username for unique entry in database somehow?
+let button = document.getElementById("submitRegistration")
+button.addEventListener("click", verification)
+
+
 
 module.exports = verification
