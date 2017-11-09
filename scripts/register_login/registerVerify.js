@@ -1,4 +1,6 @@
 console.log("register user/email")
+const pageShown = require("./dashboard_hide_show")
+
 // import userfacotry
 const userFactory = require("./registerData")
 const NutshellDatabase = require("./NutshellDatabase")
@@ -16,6 +18,8 @@ let registerOrLogin = function(event) {
     } else { //(event.target.id === "loginDash")
     userLogin(userName, email)
 }
+// Has to be called in order to run hide or show login or dashboard pages
+pageShown()
 }
 
 document.getElementById("whichButton").addEventListener("click", registerOrLogin)

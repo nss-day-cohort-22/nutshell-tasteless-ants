@@ -2,27 +2,42 @@
     <head>
       <meta charset='utf-8'>
       <title>Tasteless Nutshell!</title>
-      <!-- <link rel='stylesheet' href='./styles.css'> -->
+      <link rel='stylesheet' href='./css/styles.css'>
     </head>
+
       <body>
         <nav></nav>
-      <article id="welcomePage">
-        <h1>Welcome!</h1>  
-      </article>
       
-      <form id="regForm">
-          <div id="userName" class="required"> Username *</div>
-          <input id="check_userName" type="text" name="username" required>
-          <br>
-          <div id="email"></div> Email address *</div>
-          <br>
-          <input id="check_email" type="text" name="email" required>
-          <br>
+      <div id="loginPage">
+        <article id="welcomePage">
+            <h1>Welcome!</h1>  
+        </article>
+
+        <form id="regForm">
+            <div id="userName" class="required"> Username *</div>
+            <input id="check_userName" type="text" name="username" required>
+            <br>
+            <div id="email"> Email address *</div>
+            <br>
+            <input id="check_email" type="text" name="email" required>
+            <br>
         </form>
+
         <div id="whichButton"> 
           <button id="submitRegistration">Register</button>
           <button id="loginDash">Login</button>
         </div>
+      </div>
+    
+
+      <div id="dashboardPage">
+        <section>Dashboard</section>
+        <div id="chat">chat</div>
+        <div id="tasks">tasks</div>
+        <div id="news">news</div>
+        <div id="events">events</div>  
+        <div id="friends">friends</div>
+      </div>
 
         <footer></footer>
       <script src='./build/bundle.js'></script>
