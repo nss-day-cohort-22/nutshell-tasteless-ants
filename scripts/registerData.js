@@ -1,27 +1,23 @@
-console.log("i tried")
-const userDatabase = require("./users")
+console.log("ugh i'm trying")
 
+const NutshellDatabase = require("./NutshellDatabase")
+const {registerOrLogin, activeUserSet} = require("./registerVerify")
+let button = document.getElementById("submitRegistration")
 
-// take input form data (email and username) when submit button is clicked, create new object and push it into userDatabase
-
-let userInputData = () => {
-
-// this probably isn't working
-    button.addEventListener("click", function(event) {
-        let userInput = document.getElementById("check_userName", "check_email").value
-        })
-// creates id
-    const userId = function* () {
-        let id = 1
+ // creates id
+    const userId = function* (from) {
+        let id = 1 //because of the dummy users
         while (true) {
-            yield id
+            yield from + id
             id ++
         }
     }
-    const userIdGenerator = userId()
-// create object out of user input
-    const userFactory = (id, userName, email) => {
-        userDatabase.push(Object.create(null,{ //pushes into userDatabase
+    const lastId = NutshellDatabase.users[NutshellDatabase.users.length - 1] || {id: 0}
+    const userIdGenerator = userId(lastId.id)
+
+ // create object out of user input
+    const userFactory = (userName, email) => {
+        return Object.create(null, {
             "id": {
                 value: userIdGenerator.next().value,
                 enumerable: true
@@ -34,9 +30,8 @@ let userInputData = () => {
                 value: email,
                 enumerable: true
             }
-        }))
+        })
     }
-}
 
 
-module.exports = userInputData
+module.exports = userFactory
