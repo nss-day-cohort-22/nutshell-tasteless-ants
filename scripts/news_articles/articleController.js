@@ -2,6 +2,7 @@ console.log("articleController")
 const articleFactory = require("./articleFactory")
 const NutshellDatabase = require("../register_login/NutshellDatabase")
 
+
 // get input from form
 let submitArticle = function(event) {
     // get input value from form
