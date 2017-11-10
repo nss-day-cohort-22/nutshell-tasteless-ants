@@ -1,4 +1,6 @@
 console.log("this is fine")
+
+// use this to seed database
 // const NutshellDatabase =
 //     {
 //     "users": [
@@ -28,7 +30,7 @@ console.log("this is fine")
 //         ],
 
 //     "news": [
-//         { "id": 1, "userId": 2, "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/", "note": "Check out this recent discovery about workholes" }
+//         { "id": 1, "userId": 2, "title": "Monkeybuttz", "synopsis": "Check out this recent discovery about Monkeybuttz", "url": "www.yep.com" }
 //         ],
 
 //     "friends": [
