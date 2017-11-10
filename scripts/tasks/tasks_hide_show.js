@@ -10,8 +10,7 @@ for (let i = 0 ; i < NutshellDatabase.tasks.length ; i++) {
     let currentTask = NutshellDatabase.tasks[i];
 
     taskEl.innerHTML += `
-    <h2>${currentTask.taskTitle}</h2>
-    <p>${currentTask.taskCompletionDate}</p>
+    <h2>${currentTask.taskTitle}</h2><p>${currentTask.taskCompletionDate}</p>
     `
 }
 
