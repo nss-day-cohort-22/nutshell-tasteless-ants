@@ -24,7 +24,7 @@ let createEventForm = function(event) {
 
     // EVENT LISTENERS for both buttons
     // make an event listener with a click and create event form
-document.getElementById("createEventArticle").addEventListener("click",saveEventForm)
+// document.getElementById("createEventArticle").addEventListener("click",saveEventForm)
 
     // make an event listener with a click and save the event form
 document.getElementById("saveEventForm").addEventListener("click",createEventForm)
