@@ -1,4 +1,4 @@
-console.log("ugh i'm trying")
+console.log("RegisterData is working!")
 
 const NutshellDatabase = require("./NutshellDatabase")
 const {registerOrLogin, activeUserSet} = require("./registerVerify")

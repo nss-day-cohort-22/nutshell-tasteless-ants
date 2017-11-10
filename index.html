@@ -33,7 +33,28 @@
       <div id="dashboardPage">
         <section>Dashboard</section>
         <div id="chat">chat</div>
-        <div id="tasks">tasks</div>
+
+        <div id="tasks">
+            <h1>Tasks</h1>
+            <button>Create New Task</button> 
+            <!-- this button toggles hide/show on Card Mode -->
+            <div id="task_create_card">  
+                <br>
+              <label>Task Title</label>
+                <br>
+              <input type="text" id="taskForm__title">
+                <br>
+              <label>Estimated Completion Date</label>
+                <br>
+              <textarea type="text" id="taskForm__completion_date"></textarea>
+                <br>
+              <button id="submit_task_button">Save Task</button>
+              <!-- save button triggers creation functions and then toggles hide/show -->
+                <br>
+            </div>
+            <div id="Task__displayer"></div>
+          </div>
+
         <div id="news">news</div>
         <div id="events">events</div>  
         <div id="friends">friends</div>
