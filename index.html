@@ -32,6 +32,32 @@
 
       <div id="dashboardPage">
         <section>Dashboard</section>
+
+        <div id="events">Events
+            <h1>My Events</h1>
+            <button id="createEventArticle">Create New Event</button> 
+            <!-- this event button toggles hide/show on Card Mode -->
+            <div id="createEventArticle">  
+              <br>
+            <label>Event Name:</label>
+              <br>
+            <input type="text" id="eventForm__title">
+              <br>
+            <label>Date of Event</label>
+              <br>
+            <textarea type="text" id="eventForm__location"></textarea>
+              <br>
+            <label>Location of Event:</label>
+              <br>
+            <input type="text" id="eventForm__date">
+              <br>
+            <br><button id="saveEventForm">Save Article</button>
+            <!-- save button triggers creation functions and then toggles hide/show -->
+              <br>
+            </div>
+            <div id="article__displayer"></div>
+        </div>  
+
         <h1 id="chat">chat</h1>
         
         <div id="news">
@@ -60,8 +86,7 @@
 
           <div id="article__displayer"></div>
         </div>
-        
-        <h1 id="events">events</h1>  
+          
         <h1 id="friends">friends</h1>
 
         <div id="tasks">
@@ -84,8 +109,6 @@
             </div>
             <div id="Task__displayer"></div>
           </div>
-
-        <div id="events">events</div>  
         <div id="friends">friends</div>
       </div>
 

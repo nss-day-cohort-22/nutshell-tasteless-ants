@@ -1,7 +1,5 @@
 console.log("this is fine")
-
-// use this to seed database
-// const NutshellDatabase =
+// let NutshellDatabase =
 //     {
 //     "users": [
 //         {
@@ -25,6 +23,17 @@ console.log("this is fine")
 //             "email": "jesse@buttz.com"
 //         }
 //         ],
+
+//     "events": [
+//         {
+//             "id": 1,
+//             "userID" :2,
+//             "eventForm_title": "Event title",
+//             "eventForm_location": "Memphis,TN",
+//             "eventForm_date": "June 12th, 2016"
+//         }
+
+//         ],
 //     "messages": [
 //         { "id": 1, "userId": 1, "message": "What's up?" }
 //         ],
@@ -45,7 +54,7 @@ console.log("this is fine")
 //     localStorage.setItem("NutshellDatabase", JSON.stringify(NutshellDatabase));
 
 let JSONNutshell = localStorage.getItem("NutshellDatabase")
-let NutshellDatabase = JSON.parse(JSONNutshell)
+ NutshellDatabase = JSON.parse(JSONNutshell)
 
 console.log(NutshellDatabase.users)
 
