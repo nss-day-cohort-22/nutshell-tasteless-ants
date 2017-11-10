@@ -4,19 +4,20 @@ const NutshellDatabase = require("../register_login/NutshellDatabase")
 
 
 // id generator
-const articleId = function* () {
+const articleId = function* (from) {
     let id = 0
     while (true) {
-        yield id
+        yield from + id
         id ++
     }
 }
 // dat instance tho
 const lastNewsId = NutshellDatabase.news[NutshellDatabase.news.length - 1] || {id: 0}
-const articleIdGenerator = articleId()
+const articleIdGenerator = articleId(lastNewsId.id)
 
 // object factory
 const articleFactory = function(title, synopsis, url) {
+    let timestamp = Date.now();
     return Object.create(null, {
         "id": {
             value: articleIdGenerator.next().value,
@@ -36,6 +37,10 @@ const articleFactory = function(title, synopsis, url) {
         },
         "url": {
             value: url,
+            enumerable: true
+        },
+        "timestamp": {
+            value: timestamp,
             enumerable: true
         }
     })
