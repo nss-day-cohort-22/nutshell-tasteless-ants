@@ -21,7 +21,7 @@ const taskFactory = (taskTitle, taskCompletionDate) => {
             enumerable: true
         },
         "userID": {
-            value: JSON.parse(sessionStorage.getItem("activeUser").id),
+            value: JSON.parse(sessionStorage.getItem("activeUser")).id,
             enumerable: true
         },
         "taskTitle": {
@@ -35,6 +35,10 @@ const taskFactory = (taskTitle, taskCompletionDate) => {
         "completed": {
             value: false,
             writable: true
+        },
+        "timeStamp:": {
+            value: Date.now(),
+            enumerable: true
         }
     })
 }
