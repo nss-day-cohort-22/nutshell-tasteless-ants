@@ -1,12 +1,14 @@
+// Ryan McPherson - Creating new object for newly created task
+
 console.log("TasksData is working!")
 
 const NutshellDatabase = require("../register_login/NutshellDatabase")
 
- // creates id
- const taskId = function* (from) {
+ // creates unique task id
+ const taskId = function* (last) {
     let id = 1 //because of the dummy users
     while (true) {
-        yield from + id
+        yield last + id
         id ++
     }
 }

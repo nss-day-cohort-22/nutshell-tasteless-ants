@@ -48,7 +48,7 @@ console.log("this is fine")
 //         ],
 
 //     "tasks": [
-//         { "id": 1, "userId": 3, "task": "Take out garbage" }
+//         { "id": 1, "userId": 3, "taskTitle": "Take out garbage", "taskCompletionDate": "9/13/2018", "completed": "false", "timeStamp": "Date.now()" }
 //         ]
 //     }
 //     localStorage.setItem("NutshellDatabase", JSON.stringify(NutshellDatabase));
