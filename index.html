@@ -1,118 +1,118 @@
 <html lang='en'>
-    <head>
-      <meta charset='utf-8'>
-      <title>Tasteless Nutshell!</title>
-      <link rel='stylesheet' href='./css/styles.css'>
-    </head>
+  <head>
+    <meta charset='utf-8'>
+    <title>Tasteless Nutshell!</title>
+    <link rel='stylesheet' href='./css/styles.css'>
+  </head>
 
-      <body>
-        <nav></nav>
-      
-      <div id="loginPage">
-        <article id="welcomePage">
-            <h1>Welcome!</h1>  
-        </article>
-
-        <form id="regForm">
-            <div id="userName" class="required"> Username *</div>
-            <input id="check_userName" type="text" name="username" required>
-            <br>
-            <div id="email"> Email address *</div>
-            <br>
-            <input id="check_email" type="text" name="email" required>
-            <br>
-        </form>
-
-        <div id="whichButton"> 
-          <button id="submitRegistration">Register</button>
-          <button id="loginDash">Login</button>
-        </div>
-      </div>
+    <body>
+      <nav></nav>
     
+    <div id="loginPage">
+      <article id="welcomePage">
+          <h1>Welcome!</h1>  
+      </article>
 
-      <div id="dashboardPage">
-        <section>Dashboard</section>
+      <form id="regForm">
+          <div id="userName" class="required"> Username *</div>
+          <input id="check_userName" type="text" name="username" required>
+          <br>
+          <div id="email"> Email address *</div>
+          <br>
+          <input id="check_email" type="text" name="email" required>
+          <br>
+      </form>
 
-        <div id="events">Events
-            <h1>My Events</h1>
-            <button id="createEventArticle">Create New Event</button> 
-            <!-- this event button toggles hide/show on Card Mode -->
-            <div id="createEventArticle">  
-              <br>
-            <label>Event Name:</label>
-              <br>
-            <input type="text" id="eventForm__title">
-              <br>
-            <label>Date of Event</label>
-              <br>
-            <textarea type="text" id="eventForm__location"></textarea>
-              <br>
-            <label>Location of Event:</label>
-              <br>
-            <input type="text" id="eventForm__date">
-              <br>
-            <br><button id="saveEventForm">Save Article</button>
-            <!-- save button triggers creation functions and then toggles hide/show -->
-              <br>
-            </div>
-            <div id="article__displayer"></div>
-        </div>  
+      <div id="whichButton"> 
+        <button id="submitRegistration">Register</button>
+        <button id="loginDash">Login</button>
+      </div>
+    </div>
+  
 
-        <h1 id="chat">chat</h1>
-        
-        <div id="news">
-          <h1>News</h1>
-          <button id="create_new_article_button">Create New Article</button> 
-          <!-- this button toggles hide/show on Card Mode -->
-          
-          <div id="article_create_card">  
+    <div id="dashboardPage">
+      <section>Dashboard</section>
+
+      <div id="events">
+          <h1>My Events</h1>
+          <button id="createEventArticle">Create New Event</button> 
+          <!-- this event button toggles hide/show on Card Mode -->
+          <div id="createEventArticle">  
             <br>
-          <label>Article Title</label>
+          <label>Event Name:</label>
             <br>
-          <input type="text" id="articleForm__title">
+          <input type="text" id="eventForm__title">
             <br>
-          <label>Article Synopsis</label>
+          <label>Date of Event</label>
             <br>
-          <textarea type="text" id="articleForm__synopsis"></textarea>
+          <textarea type="text" id="eventForm__location"></textarea>
             <br>
-          <label>Article URL</label>
+          <label>Location of Event:</label>
             <br>
-          <input type="text" id="articleForm__url">
+          <input type="text" id="eventForm__date">
             <br>
-          <button id="submit_article_button">Save Article</button>
+          <br><button id="saveEventForm">Save Article</button>
           <!-- save button triggers creation functions and then toggles hide/show -->
             <br>
           </div>
+          <div id="events__displayer"></div>
+      </div>  
 
-          <div id="article__displayer"></div>
+      <h1 id="chat">chat</h1>
+      
+      <div id="news">
+        <h1>News</h1>
+        <button id="create_new_article_button">Create New Article</button> 
+        <!-- this button toggles hide/show on Card Mode -->
+        
+        <div id="article_create_card">  
+          <br>
+        <label>Article Title</label>
+          <br>
+        <input type="text" id="articleForm__title">
+          <br>
+        <label>Article Synopsis</label>
+          <br>
+        <textarea type="text" id="articleForm__synopsis"></textarea>
+          <br>
+        <label>Article URL</label>
+          <br>
+        <input type="text" id="articleForm__url">
+          <br>
+        <button id="submit_article_button">Save Article</button>
+        <!-- save button triggers creation functions and then toggles hide/show -->
+          <br>
         </div>
-          
-        <h1 id="friends">friends</h1>
 
-        <div id="tasks">
-            <h1>Tasks</h1>
-            <button>Create New Task</button> 
-            <!-- this button toggles hide/show on Card Mode -->
-            <div id="task_create_card">  
-                <br>
-              <label>Task Title</label>
-                <br>
-              <input type="text" id="taskForm__title">
-                <br>
-              <label>Estimated Completion Date</label>
-                <br>
-              <textarea type="text" id="taskForm__completion_date"></textarea>
-                <br>
-              <button id="submit_task_button">Save Task</button>
-              <!-- save button triggers creation functions and then toggles hide/show -->
-                <br>
-            </div>
-            <div id="Task__displayer"></div>
-          </div>
-        <div id="friends">friends</div>
+        <div id="article__displayer"></div>
       </div>
+        
+      <h1 id="friends">friends</h1>
 
-        <footer></footer>
-      <script src='./build/bundle.js'></script>
-      </body>
-    </html>
+      <div id="tasks">
+          <h1>Tasks</h1>
+          <button>Create New Task</button> 
+          <!-- this button toggles hide/show on Card Mode -->
+          <div id="task_create_card">  
+              <br>
+            <label>Task Title</label>
+              <br>
+            <input type="text" id="taskForm__title">
+              <br>
+            <label>Estimated Completion Date</label>
+              <br>
+            <textarea type="text" id="taskForm__completion_date"></textarea>
+              <br>
+            <button id="submit_task_button">Save Task</button>
+            <!-- save button triggers creation functions and then toggles hide/show -->
+              <br>
+          </div>
+          <div id="Task__displayer"></div>
+        </div>
+      <div id="friends">friends</div>
+    </div>
+
+      <footer></footer>
+    <script src='./build/bundle.js'></script>
+    </body>
+  </html>

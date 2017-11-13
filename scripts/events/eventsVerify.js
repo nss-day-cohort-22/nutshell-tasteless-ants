@@ -4,13 +4,13 @@ const eventFactory = require("../events/eventsData")
 const NutshellDatabase = require("../register_login/NutshellDatabase")
 
 let createEventForm = function(event) {
-    let eventForm_title = document.getElementById("eventForm__title").value
-    let eventForm_location = document.getElementById("eventForm__location").value
-    let eventForm_date = document.getElementById("eventForm__date").value
+    let title = document.getElementById("eventForm__title").value
+    let location = document.getElementById("eventForm__location").value
+    let date = document.getElementById("eventForm__date").value
     console.log(event.target.id)
 
     // Create new variable that calls event Data and parameters
-    const finalEventForm = eventFactory(eventForm_title,eventForm_location, eventForm_date)
+    const finalEventForm = eventFactory(title, location, date)
 
 
     // push new object into a database

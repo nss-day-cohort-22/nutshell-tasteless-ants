@@ -7,6 +7,8 @@ const articleEl = require("./news_articles/dom")
 const taskFactory = require("./tasks/tasksData")
 const taskEl = require("./tasks/tasks_hide_show")
 const createTaskForm = require("./tasks/tasksSubmit")
+const createEventForm = require("./events/hide_show_eventsform")
+const deleteButton = require("./events/deleteButton")
 
 pageShown()
 // submitArticle()  // i don't know if this should be here?

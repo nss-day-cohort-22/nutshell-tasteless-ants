@@ -28,9 +28,9 @@ console.log("this is fine")
 //         {
 //             "id": 1,
 //             "userID" :2,
-//             "eventForm_title": "Event title",
-//             "eventForm_location": "Memphis,TN",
-//             "eventForm_date": "June 12th, 2016"
+//             "title": "Event title",
+//             "location": "Memphis,TN",
+//             "date": "June 12th, 2016"
 //         }
 
 //         ],
