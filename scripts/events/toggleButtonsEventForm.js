@@ -1,3 +1,4 @@
+// Author: Courtney Seward
 function createEventCard() {
     if (event.target.id === "createEventArticle") {
         document.getElementById("createNewEventArticle").classList.remove("hidden")
@@ -11,5 +12,6 @@ document.getElementById("createEventArticle").addEventListener("click", createEv
 
 // event on "save article" button
 document.getElementById("saveEventForm").addEventListener("click", createEventCard)
+
 
 module.exports = createEventCard

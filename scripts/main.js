@@ -10,6 +10,19 @@ const createTaskForm = require("./tasks/tasksSubmit")
 const createEventForm = require("./events/hide_show_eventsform")
 const deleteButton = require("./events/deleteButton")
 const toggleEventsPage = require("./events/toggleButtonsEventForm")
+const updateDashboard = require("./updateDashboard")
 pageShown()
+
+updateDashboard()
+
+
+// KEEPING THE PAGES AUTOMATICALLY UPLOADED
+// if there is an active user than call your right to dom function
+// else display the login oage
+// if ("activeUser" === true) {
+//     updateEventsDom}
+
+
+
 // submitArticle()  // i don't know if this should be here?
 

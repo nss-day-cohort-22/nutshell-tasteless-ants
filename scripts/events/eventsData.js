@@ -1,4 +1,4 @@
-// The one I HAVE BEEN WORKING ON
+// Author: Courtney Seward
 
 console.log("blah, blah, blah")
 // This page creates an Event Object
@@ -7,10 +7,10 @@ const NutshellDatabase = require("../register_login/NutshellDatabase")
 // let button = document.getElementById("submitRegistration")
 
  // creates event id with a generator function
-    const eventID = function* (from) {
+    const eventID = function* (last) {
         let id = 1 //because of the dummy users
         while (true) {
-            yield from + id
+            yield last + id
             id ++
         }
     }
