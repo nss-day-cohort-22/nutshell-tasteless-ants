@@ -5,6 +5,7 @@ const articleDatabase = JSON.parse(localStorage.getItem("NutshellDatabase")) || 
 
 let articleEl = document.getElementById("article__displayer")
 
+// let articleDOM = function () {
     for (let i = 0; i < NutshellDatabase.news.length; i++) {
         let currentArticle = NutshellDatabase.news[i];
 
@@ -17,5 +18,6 @@ let articleEl = document.getElementById("article__displayer")
         </div>
         `
     }
+// }
 
 module.exports = articleEl

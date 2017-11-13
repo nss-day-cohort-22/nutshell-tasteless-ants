@@ -1,8 +1,8 @@
 function createCard() {
     if (event.target.id === "create_new_article_button") {
         document.getElementById("article_create_card").classList.remove("hidden")
-    } else /*(event.target.id === "submit_article_button")*/ { //why red sqiggle??
-        document.getElementById("article_create_card").classList.remove("hidden")
+    } else /*(event.target.id === "submit_article_button")*/ {
+        document.getElementById("article_create_card").classList.add("hidden")
     }
 }
 

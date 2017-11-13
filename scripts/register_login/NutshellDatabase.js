@@ -40,6 +40,8 @@ console.log("this is fine")
 
 //     "news": [
 //         { "id": 1, "userId": 2, "title": "Monkeybuttz", "synopsis": "Check out this recent discovery about Monkeybuttz", "url": "www.yep.com" }
+//         { "id": 2, "userId": 2, "title": "Monkeybuttz", "synopsis": "Check out this recent discovery about Monkeybuttz", "url": "www.yep.com" }
+//         { "id": 3, "userId": 2, "title": "Monkeybuttz", "synopsis": "Check out this recent discovery about Monkeybuttz", "url": "www.yep.com" }
 //         ],
 
 //     "friends": [

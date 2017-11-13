@@ -17,16 +17,10 @@ let submitArticle = function(event) {
     localStorage.setItem("NutshellDatabase", JSON.stringify(NutshellDatabase))
     console.log(NutshellDatabase.news)
 }
-
+// submit button click creates new object with input value and pushes to database
 document.getElementById("submit_article_button").addEventListener("click", submitArticle)
 
-// attempt to populate new article without refreshing?
-window.addEventListener("submit_article_button", function (event) {
-    if (event.key === "NutshellDatabase.news") {
-        submitArticle()
-        ///
-    }
-})
+
 
 
 module.exports = submitArticle

@@ -5,7 +5,7 @@ const NutshellDatabase = require("../register_login/NutshellDatabase")
 
 // id generator
 const articleId = function* (from) {
-    let id = 0
+    let id = 1
     while (true) {
         yield from + id
         id ++

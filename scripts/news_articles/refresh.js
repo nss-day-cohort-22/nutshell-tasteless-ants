@@ -1,11 +1,10 @@
-// const submitArticle = require("./news_articles/articleController")
+// const articleDom = require("./news_articles/dom")
 
-// // trying Chris's refresh script
-// window.addEventListener("submit_article_button", function (event) {
-//     if (event.key === "NutshellDatabase.news") {
-//         submitArticle()
+// // attempt to populate new article without refreshing?
+// window.addEventListener("storage", function (event) {
+//     if (event.key === "NutshellDatabase") {
+//         articleDOM()
 //         ///
 //     }
 // })
-
 // module.exports = null
