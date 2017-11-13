@@ -1,3 +1,5 @@
+// author: Jesse Page
+
 console.log("articleFactory")
 const submitArticle = require("./articleController")
 const NutshellDatabase = require("../register_login/NutshellDatabase")
@@ -44,8 +46,9 @@ const articleFactory = function(title, synopsis, url) {
             enumerable: true
         },
         // example from Steve's pagination
-        // "sort": {
-            // set: (arr) => _items = arr.sort((p, n) => n.id - p.id)
+        "sort": {
+            set: (news) => articles = arr.sort((p, n) => n.timestamp - p.timestamp)
+        }
     })
 }
 

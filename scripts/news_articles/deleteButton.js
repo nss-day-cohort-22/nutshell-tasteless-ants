@@ -1,7 +1,7 @@
-// const articleEl = require("./news_articles/dom")
+// author: Jesse Page
 const NutshellDatabase = require("../register_login/NutshellDatabase")
 
-
+let deleteMaster = function () {
 let deleteArticle = document.getElementsByClassName("delete_article")
 for (let i = 0; i < deleteArticle.length; i++) {
     let deleteBtns = deleteArticle[i];
@@ -19,7 +19,8 @@ for (let i = 0; i < deleteArticle.length; i++) {
         NutshellDatabase.news = newDatabase
         localStorage.setItem("NutshellDatabase", JSON.stringify(NutshellDatabase))
 
-    });
+        });
+    }
 }
 /* <button id="delete_article">Delete</button> */
-module.exports = deleteArticle
+module.exports = deleteMaster

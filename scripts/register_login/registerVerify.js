@@ -1,5 +1,6 @@
 console.log("register user/email")
 const pageShown = require("./dashboard_hide_show")
+const updateArticleDOM = require("../news_articles/dom")
 
 // import userfacotry
 const userFactory = require("./registerData")
@@ -9,6 +10,7 @@ let registerOrLogin = function(event) {
     let userName = document.getElementById("check_userName").value
     let email = document.getElementById("check_email").value
     console.log(event.target.id)
+    updateArticleDOM()
     if (event.target.id === "submitRegistration") {
        const activeUser = userFactory(userName, email)
        NutshellDatabase.users.push(activeUser)

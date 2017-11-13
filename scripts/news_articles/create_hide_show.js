@@ -1,3 +1,4 @@
+// author: Jesse Page
 function createCard() {
     if (event.target.id === "create_new_article_button") {
         document.getElementById("article_create_card").classList.remove("hidden")

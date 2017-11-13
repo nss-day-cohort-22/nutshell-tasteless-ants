@@ -1,3 +1,4 @@
+// author: Jesse Page
 console.log("this is fine")
 // let NutshellDatabase =
 //     {
@@ -21,7 +22,13 @@ console.log("this is fine")
 //             "id": 4,
 //             "userName": "Jesse",
 //             "email": "jesse@buttz.com"
-//         }
+//         },
+            // "friends" : [
+                //     {userName: Jesse,
+                //     id: 2},
+                //     {userName: Ryan,
+                //     id: 1},
+                // ]
 //         ],
 
 //     "events": [
