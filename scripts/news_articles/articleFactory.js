@@ -42,7 +42,10 @@ const articleFactory = function(title, synopsis, url) {
         "timestamp": {
             value: timestamp,
             enumerable: true
-        }
+        },
+        // example from Steve's pagination
+        // "sort": {
+            // set: (arr) => _items = arr.sort((p, n) => n.id - p.id)
     })
 }
 

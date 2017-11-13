@@ -19,7 +19,14 @@ let submitArticle = function(event) {
 }
 
 document.getElementById("submit_article_button").addEventListener("click", submitArticle)
-// get item from local store to write in the DOM with delete button... maybe in another module?
+
+// attempt to populate new article without refreshing?
+window.addEventListener("submit_article_button", function (event) {
+    if (event.key === "NutshellDatabase.news") {
+        submitArticle()
+        ///
+    }
+})
 
 
 module.exports = submitArticle
