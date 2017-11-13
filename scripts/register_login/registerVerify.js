@@ -4,16 +4,18 @@ const pageShown = require("./dashboard_hide_show")
 // import userfacotry
 const userFactory = require("./registerData")
 const NutshellDatabase = require("./NutshellDatabase")
+const updateTaskDOM = require("../tasks/tasks_hide_show")
 
 let registerOrLogin = function(event) {
     let userName = document.getElementById("check_userName").value
     let email = document.getElementById("check_email").value
+    updateTaskDOM()
     console.log(event.target.id)
     if (event.target.id === "submitRegistration") {
-       const activeUser = userFactory(userName, email)
-       NutshellDatabase.users.push(activeUser)
-       localStorage.setItem("NutshellDatabase", JSON.stringify(NutshellDatabase));
-       console.log(NutshellDatabase.users)
+        const activeUser = userFactory(userName, email)
+        NutshellDatabase.users.push(activeUser)
+        localStorage.setItem("NutshellDatabase", JSON.stringify(NutshellDatabase));
+        console.log(NutshellDatabase.users)
         activeUserSet(activeUser)
     } else { //(event.target.id === "loginDash")
     userLogin(userName, email)

@@ -1,5 +1,6 @@
 // Ryan McPherson - Takes the input from the task title and completion date and pushes it into Nutshell Database
 console.log("Tasks Submit Showing!")
+const updateTaskDOM = require("./tasks_hide_show")
 
 // import userfactory
 const taskFactory = require("./tasksData")
@@ -14,6 +15,7 @@ let createTaskForm = function(event) {
     NutshellDatabase.tasks.push(newTask)
     localStorage.setItem("NutshellDatabase", JSON.stringify(NutshellDatabase));
     console.log(NutshellDatabase.tasks)
+    updateTaskDOM()
 }
 // Has to be called in order to run hide or show login or dashboard pages
 // tasksShown()
