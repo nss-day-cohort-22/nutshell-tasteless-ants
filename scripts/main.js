@@ -9,7 +9,7 @@ const taskEl = require("./tasks/tasks_hide_show")
 const createTaskForm = require("./tasks/tasksSubmit")
 const createEventForm = require("./events/hide_show_eventsform")
 const deleteButton = require("./events/deleteButton")
-
+const toggleEventsPage = require("./events/toggleButtonsEventForm")
 pageShown()
 // submitArticle()  // i don't know if this should be here?
 
