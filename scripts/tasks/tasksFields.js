@@ -1,4 +1,4 @@
-// Ryan McPherson - to hide and show the input fields when as they are being created
+// Ryan McPherson - Hide and show the input fields as create button is being clicked
 
 function createTaskCard() {
     if (event.target.id === "create_new_task") {

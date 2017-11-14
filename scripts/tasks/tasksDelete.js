@@ -1,4 +1,5 @@
-// Ryan McPherson - Deleting individual tasks from DOM and Database
+// Ryan McPherson - Marks tasks "complete: true" within Nutshell DB and removes them from DOM
+
 const NutshellDatabase = require("../register_login/NutshellDatabase")
 const tasksEl = require("../tasks/tasks_hide_show")
 
@@ -23,6 +24,4 @@ let deleteTasksFunction = function () {
         });
     }
 }
-
-/* <button id="delete_article">Delete</button> */
 module.exports = deleteTasksFunction

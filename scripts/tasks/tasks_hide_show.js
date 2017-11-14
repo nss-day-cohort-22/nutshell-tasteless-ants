@@ -7,6 +7,7 @@ const tasksDatabase = JSON.parse(localStorage.getItem("NutshellDatabase"))
 
 let taskEl = document.getElementById("Task__displayer")
 
+// Looping through task dabatase, clears the DOM first, then prints only they are marked as "completed: false"
 let updateTaskDOM = function () {
     taskEl.innerHTML= ""
 for (let i = 0 ; i < NutshellDatabase.tasks.length ; i++) {

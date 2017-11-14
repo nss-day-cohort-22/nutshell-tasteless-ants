@@ -1,4 +1,4 @@
-console.log("This is auto seeding Nutshell DB if needed.")
+// Ryan McPherson - Pushes seeded database into localstorage IF there isnt anything there, and won't if there is
 
 let JSONNutshell = localStorage.getItem("NutshellDatabase")
 
