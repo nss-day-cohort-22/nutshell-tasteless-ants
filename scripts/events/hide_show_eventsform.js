@@ -39,7 +39,6 @@ let updateEventDom = function(){
 }
 // now call the specific class that holds the editEventButton
 let addListeners = function () {
-    debugger
     let finalizeEventButton = document.getElementsByClassName("editEventButton")
     // call a for loop to run through the speciifc ids within the Event Button Class
     for (let i = 0; i < finalizeEventButton.length; i++) {

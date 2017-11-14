@@ -1,5 +1,7 @@
 // const updateTaskDOM = require("./tasks/tasks_hide_show")
 // const updateEventDOM = require("./events/eventsVerify")
+// // const updateTaskDOM = require("./tasks/tasks_hide_show")
+// // const updateEventDOM = require("./events/eventsVerify")
 // const updateArticleDOM = require("./news_articles/dom")
 // const welcomeActiveUser = require("./register_login/registerVerify")
 

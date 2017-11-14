@@ -1,15 +1,17 @@
-// const updateTaskDOM = require("./tasks/tasks_hide_show")
-const updateEventDom = require("./events/hide_show_eventsform")
-const updateArticleDOM = require("./articles/dom")
+const updateTaskDOM = require("./tasks/tasks_hide_show")
+const updateEventDOM = require("./events/hide_show_eventsform")
+const updateArticleDOM = require("./news_articles/dom")
+const welcomeActiveUser = require("./register_login/registerVerify")
+
 
 const activeUser = JSON.parse(sessionStorage.getItem("activeUser"))
 
 const updateDashboard = function () {
-    debugger
     if (activeUser !== null) {
-    // updateTaskDOM()
-    updateEventDom()
+    updateTaskDOM()
     updateArticleDOM()
+    welcomeActiveUser()
+    updateEventDOM()
     }
 }
 

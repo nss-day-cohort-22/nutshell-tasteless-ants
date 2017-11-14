@@ -35,6 +35,7 @@
       <div id="dashboardPage">
         <div id="welcomeUser"></div>
         <section>Dashboard</section>
+        <button id="log_out_button">Log-Out</button>
     <div id="events">
           <h1>My Events</h1>
           <button id="createEventArticle">Create New Event</button> 
@@ -59,9 +60,6 @@
           </div>
           <div id="events__displayer"></div>
       </div> 
-            <!-- <div id="article__displayer"></div>  -->
-            <!-- this needs to change -->
-        
 
         <h1 id="chat">chat</h1>
         <!-- maybe have chat at the bottom -->
@@ -95,25 +93,25 @@
           
         
         <div id="tasks">
-          <h1>Tasks</h1>
-          <button>Create New Task</button> 
-          <!-- this button toggles hide/show on Card Mode -->
-          <div id="task_create_card">  
-            <br>
-            <label>Task Title</label>
-            <br>
-            <input type="text" id="taskForm__title">
-            <br>
-            <label>Estimated Completion Date</label>
-            <br>
-            <textarea type="text" id="taskForm__completion_date"></textarea>
-            <br>
-            <button id="submit_task_button">Save Task</button>
-            <!-- save button triggers creation functions and then toggles hide/show -->
-            <br>
+            <h1>Tasks</h1>
+            <button id="create_new_task">Create New Task</button> 
+            <!-- this button toggles hide/show on Card Mode -->
+            <div id="task_create_card" class="hidden">  
+                <br>
+              <label>Task Title</label>
+                <br>
+              <input type="text" id="taskForm__title">
+                <br>
+              <label>Estimated Completion Date</label>
+                <br>
+              <textarea type="text" id="taskForm__completion_date"></textarea>
+                <br>
+              <button id="submit_task_button">Save Task</button>
+              <!-- save button triggers creation functions and then toggles hide/show -->
+                <br>
+            </div>
+            <div id="Task__displayer"></div>
           </div>
-          <div id="Task__displayer"></div>
-        </div>
         
         <div id="friends">
         <h1>Friends</h1>
