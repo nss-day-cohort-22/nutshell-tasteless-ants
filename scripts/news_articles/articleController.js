@@ -1,9 +1,12 @@
+// author: Jesse Page
 console.log("articleController")
 const articleFactory = require("./articleFactory")
 const NutshellDatabase = require("../register_login/NutshellDatabase")
+const updateArticleDOM = require("./dom")
+const deleteMaster = require("./deleteButton")
 
 
-// get input from form
+// update article dom
 let submitArticle = function(event) {
     // get input value from form
     let articleTitle = document.getElementById("articleForm__title").value
@@ -16,10 +19,11 @@ let submitArticle = function(event) {
     // set in local storage
     localStorage.setItem("NutshellDatabase", JSON.stringify(NutshellDatabase))
     console.log(NutshellDatabase.news)
+    updateArticleDOM()
 }
-
+// submit button click creates new object with input value and pushes to database
 document.getElementById("submit_article_button").addEventListener("click", submitArticle)
-// get item from local store to write in the DOM with delete button... maybe in another module?
+
 
 
 module.exports = submitArticle

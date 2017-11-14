@@ -11,24 +11,33 @@ JSON.stringify({
             "id": 1,
             "userName": "Courtney",
             "email": "courtney@buttz.com",
+            "picture": "../images/blondedog.jpg"
         },
         {
             "id": 2,
             "userName": "Keith",
             "email": "keith@buttz.com",
+            "picture": "../images/headphone-dog.jpg"
         },
         {
             "id": 3,
             "userName": "Ryan",
-            "email": "ryan@buttz.com"
+            "email": "ryan@buttz.com",
+            "picture": "../images/UTdog.jpg"
         },
         {
             "id": 4,
             "userName": "Jesse",
-            "email": "jesse@buttz.com"
-        }
-        ],
-
+            "email": "jesse@buttz.com",
+            "picture": "../images/browndog.jpg"
+        },
+            // "friends" : [
+            //         {userName: Jesse,
+            //         id: 2},
+            //         {userName: Ryan,
+            //         id: 1},
+            //     ]
+    ],
     "events": [
         {
             "id": 1,

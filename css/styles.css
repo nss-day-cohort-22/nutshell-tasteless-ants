@@ -3,3 +3,7 @@
     display: none;
 }
 
+#article_create_card {
+    border: 2px solid black;
+    text-align: center;
+}

@@ -1,5 +1,6 @@
 console.log("register user/email")
 const pageShown = require("./dashboard_hide_show")
+const updateArticleDOM = require("../news_articles/dom")
 
 // import userfacotry
 const userFactory = require("./registerData")
@@ -17,9 +18,11 @@ let registerOrLogin = function(event) {
         console.log(NutshellDatabase.users)
         activeUserSet(activeUser)
         updateTaskDOM()
+        updateArticleDOM()
     } else { //(event.target.id === "loginDash")
-    userLogin(userName, email)
-    updateTaskDOM()
+        userLogin(userName, email)
+        updateTaskDOM()
+        updateArticleDOM()
 }
 // Has to be called in order to run hide or show login or dashboard pages
 pageShown()
@@ -40,4 +43,15 @@ function activeUserSet(activeUser) {
     sessionStorage.setItem("activeUser", JSON.stringify(activeUser));
 }
 
+// display welcome "active user" in at top of browser
+const currentActiveUser = JSON.parse(sessionStorage.getItem("activeUser"))
+let welcomeEl = document.getElementById("welcomeUser")
+
+let welcomeActiveUser = function() {
+    welcomeEl.innerHTML += `
+    <h1>Welcome ${currentActiveUser.userName}!</h1>
+    `
+}
+
 module.exports = registerOrLogin
+module.exports = welcomeActiveUser
