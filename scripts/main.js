@@ -11,6 +11,7 @@ const createEventForm = require("./events/hide_show_eventsform")
 const deleteButton = require("./events/deleteButton")
 const toggleEventsPage = require("./events/toggleButtonsEventForm")
 const updateDashboard = require("./updateDashboard")
+// const editTheCurrentEvent = require("./events/eventsButton")
 pageShown()
 
 updateDashboard()
