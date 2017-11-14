@@ -1,0 +1,13 @@
+/* 
+Instructions for new events created:
+Given a user has entered in 1, or more, events
+When the event component is updated
+Then the next event on the agenda should have bold text
+And it should be slightly larger in size
+And it should have a non-white, and non-offensive background color */
+
+/* .newEventStyled {
+    font-weight: bold;
+    background-color: white;
+    font-size: 30px;
+} */

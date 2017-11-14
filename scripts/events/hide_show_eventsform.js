@@ -19,12 +19,15 @@ console.log(currentEvent)
 
 
 // call the IDs we want to collect from the Database
+// assign a class here that you will style with CSS
+// confused about placement for new class name: <div class="${newEventStyled.class}"> </div>
    let writeToDom =
     `<div id="${currentEvent.id}">
         <div class= "editEventButton" id= "editEventTitle" contenteditable = "true"> ${currentEvent.title}</div>
         <div class= "editEventButton" id= "editEventLocation" contenteditable = "true"> ${currentEvent.location}</div>
         <div class= "editEventButton" id= "editEventdate" contenteditable = "true"> ${currentEvent.date}</div>
-       <button class="delete_article" id = "${currentEvent.id}">Delete</button> <button class = "editEventButton">Edit Event</button>`
+       <button class="delete_article" id = "${currentEvent.id}">Delete</button> <button class = "editEventButton">Edit Event</button>
+       </div>`
        eventsEl.innerHTML += writeToDom
     }
     addListeners()
