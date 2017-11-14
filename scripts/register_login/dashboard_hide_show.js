@@ -11,3 +11,4 @@ function pageShown() {
 }
 
 module.exports = pageShown
+

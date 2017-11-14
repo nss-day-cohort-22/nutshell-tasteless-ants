@@ -1,3 +1,30 @@
 .hidden {
     display: none;
 }
+
+.chatSendButton{
+
+
+}
+
+.chatWindow {
+    background-color: white;
+    width: 1000px;
+    height: 200px;
+    overflow: scroll;
+    border: black solid 2px;
+}
+
+.chatBlockStyle{
+    background-color: lightseagreen;
+
+}
+
+.chatInputField{
+    width: 800px;
+}
+
+#chatSendButton{
+
+    
+}

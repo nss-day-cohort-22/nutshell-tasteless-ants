@@ -7,6 +7,7 @@ const articleEl = require("./news_articles/dom")
 const taskFactory = require("./tasks/tasksData")
 const taskEl = require("./tasks/tasks_hide_show")
 const createTaskForm = require("./tasks/tasksSubmit")
+const chatController = require("./chat/chatController")
 
 pageShown()
 // submitArticle()  // i don't know if this should be here?
