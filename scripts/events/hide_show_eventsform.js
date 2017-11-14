@@ -39,6 +39,7 @@ let updateEventDom = function(){
 }
 // now call the specific class that holds the editEventButton
 let addListeners = function () {
+    debugger
     let finalizeEventButton = document.getElementsByClassName("editEventButton")
     // call a for loop to run through the speciifc ids within the Event Button Class
     for (let i = 0; i < finalizeEventButton.length; i++) {
@@ -46,11 +47,11 @@ let addListeners = function () {
         // create an event listener for when the new edits have been made you can submit the "Edit Event" button
             element.addEventListener("click", function (e) {
                 console.log(e)
-            e.preventDefault()
-            //calls the specific ids
-            let idToEdit = parseInt(e.target.parentNode.id)
-            let completedEventObject = NutshellDatabase.events.filter(function(evnt){
-                return idToEdit === evnt.id
+                e.preventDefault()
+                //calls the specific ids
+                let idToEdit = parseInt(e.target.parentNode.id)
+                let completedEventObject = NutshellDatabase.events.filter(function(evnt){
+                    return idToEdit === evnt.id
             })
             console.log(completedEventObject)
             completedEventObject[0].title = e.target.parentNode.children[0].innerText
