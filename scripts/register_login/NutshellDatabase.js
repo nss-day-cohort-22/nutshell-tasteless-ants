@@ -1,4 +1,4 @@
-console.log("this is fine")
+console.log("This is auto seeding Nutshell DB if needed.")
 
 let JSONNutshell = localStorage.getItem("NutshellDatabase")
 
