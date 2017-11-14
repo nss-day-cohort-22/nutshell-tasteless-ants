@@ -4,7 +4,7 @@ let Nutshell = require("../register_login/NutshellDatabase")
 console.log("Nutshell", Nutshell)
 const chatFactory = require("./chatFactory")
 
-let addNewMessage = function(Nutshell){
+let addNewMessage = function(){
     console.log("testing testing")
     console.log("Nutshell", Nutshell)
     const message = document.getElementById("chatInputField").value
