@@ -1,5 +1,5 @@
 const updateTaskDOM = require("./tasks/tasks_hide_show")
-// const updateEventDOM = require("./events/eventsVerify")
+const updateEventDOM = require("./events/hide_show_eventsform")
 const updateArticleDOM = require("./news_articles/dom")
 const welcomeActiveUser = require("./register_login/registerVerify")
 
@@ -11,7 +11,7 @@ const updateDashboard = function () {
     updateTaskDOM()
     updateArticleDOM()
     welcomeActiveUser()
-    // updateEventDOM()
+    updateEventDOM()
     }
 }
 

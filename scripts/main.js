@@ -9,14 +9,28 @@ const updateDashboard = require("./updateDashboard")
 const taskFactory = require("./tasks/tasksData")
 const updateTaskDOM = require("./tasks/tasks_hide_show")
 const createTaskForm = require("./tasks/tasksSubmit")
+const createEventForm = require("./events/hide_show_eventsform")
+const deleteButton = require("./events/deleteButton")
+const toggleEventsPage = require("./events/toggleButtonsEventForm")
 const deleteTasks = require("./tasks/tasksDelete")
 const createTaskCard = require("./tasks/tasksFields")
 const logOut = require("./register_login/logOut")
 const updateFriendsDOM = require("./friends/friendsDOM")
-
+// const editTheCurrentEvent = require("./events/eventsButton")
 pageShown()
+
 updateDashboard()
 updateFriendsDOM()
+
+
+
+// Jesse's Merges
+// submitArticle()  // i don't know if this should be here?
+// const updateFriendsDOM = require("./friends/friendsDOM")
+
+// pageShown()
+// updateDashboard()
+// updateFriendsDOM()
 
 
 
