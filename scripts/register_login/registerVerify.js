@@ -9,7 +9,6 @@ const updateTaskDOM = require("../tasks/tasks_hide_show")
 let registerOrLogin = function(event) {
     let userName = document.getElementById("check_userName").value
     let email = document.getElementById("check_email").value
-    updateTaskDOM()
     console.log(event.target.id)
     if (event.target.id === "submitRegistration") {
         const activeUser = userFactory(userName, email)
@@ -17,8 +16,10 @@ let registerOrLogin = function(event) {
         localStorage.setItem("NutshellDatabase", JSON.stringify(NutshellDatabase));
         console.log(NutshellDatabase.users)
         activeUserSet(activeUser)
+        updateTaskDOM()
     } else { //(event.target.id === "loginDash")
     userLogin(userName, email)
+    updateTaskDOM()
 }
 // Has to be called in order to run hide or show login or dashboard pages
 pageShown()
@@ -39,4 +40,4 @@ function activeUserSet(activeUser) {
     sessionStorage.setItem("activeUser", JSON.stringify(activeUser));
 }
 
-
+module.exports = registerOrLogin

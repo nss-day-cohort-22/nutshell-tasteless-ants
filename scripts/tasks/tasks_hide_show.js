@@ -2,18 +2,19 @@
 
 const NutshellDatabase = require("../register_login/NutshellDatabase")
 const deleteTasksFunction = require("./tasksDelete")
+const registerOrLogin = require("../register_login/registerVerify")
 
 const tasksDatabase = JSON.parse(localStorage.getItem("NutshellDatabase"))
-const activeUser = JSON.parse(sessionStorage.getItem("activeUser"))
 
 let taskEl = document.getElementById("Task__displayer")
 
 // Looping through task dabatase, clears the DOM first, then prints only they are marked as "completed: false"
 let updateTaskDOM = function () {
     taskEl.innerHTML= ""
-for (let i = 0 ; i < NutshellDatabase.tasks.length ; i++) {
-    let currentTask = NutshellDatabase.tasks[i];
-    if (currentTask.userID === activeUser.id && currentTask.completed  === false) {
+    for (let i = 0 ; i < NutshellDatabase.tasks.length ; i++) {
+        let currentTask = NutshellDatabase.tasks[i];
+        const activeUserInfo = JSON.parse(sessionStorage.getItem("activeUser"))
+    if (currentTask.userID === activeUserInfo.id && currentTask.completed  === false) {
         let writeTaskDOM = `
             <div id="${currentTask.id}">
                 <h2>To Do: </h2><div class="edit_task" contenteditable="true"> ${currentTask.taskTitle}</div>
