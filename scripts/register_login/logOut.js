@@ -3,6 +3,7 @@
 const logOutButton = document.getElementById("log_out_button")
 const logOut = function () {
     sessionStorage.removeItem("activeUser")
+    window.location.reload()
 }
 
 logOutButton.addEventListener("click", logOut)
