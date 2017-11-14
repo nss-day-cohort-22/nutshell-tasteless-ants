@@ -14,13 +14,12 @@ let deleteTasksFunction = function () {
             // this new variable grabs the id and sets the id to be a number not a string ()-check in console.log
             let idToDelete = parseInt(event.target.parentNode.id)
             // Once event is deleted from the DOM we want to delete it in Local Storage / create a new tasks database -filter is returning a new array where the id of the button that was clicked is removed
-            let newDatabase = NutshellDatabase.tasks.filter(function(evnt){
-                return idToDelete !== evnt.id
+            let completedTaskObject = NutshellDatabase.tasks.filter(function(evnt){
+                return idToDelete === evnt.id
             })
+            completedTaskObject[0].completed = true
             // save database
-            NutshellDatabase.tasks = newDatabase
             localStorage.setItem("NutshellDatabase", JSON.stringify(NutshellDatabase))
-
         });
     }
 }
