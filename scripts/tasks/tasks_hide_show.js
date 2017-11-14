@@ -14,7 +14,7 @@ for (let i = 0 ; i < NutshellDatabase.tasks.length ; i++) {
     console.log("UPDATE TASK DOM IS BEING CALLED")
         let writeTaskDOM = `
             <div id="${currentTask.id}">
-                <h2 contenteditable="true">To Do: ${currentTask.taskTitle}</h2>
+                <h2>To Do: </h2><div class="edit_task" contenteditable="true"> ${currentTask.taskTitle}</div>
                 <p>Due Date: ${currentTask.taskCompletionDate}</p>
                 <button class="delete_task">✓</button>
             </div>
@@ -24,5 +24,18 @@ for (let i = 0 ; i < NutshellDatabase.tasks.length ; i++) {
     deleteTasksFunction()
     }
 }
+
+document.addEventListener("keydown", function(e) {
+    if (e.key === "Enter" && e.target.className === "edit_task") {
+        e.preventDefault()
+        let idToEdit = parseInt(e.target.parentNode.id)
+        let completedTaskObject = NutshellDatabase.tasks.filter(function(evnt){
+            return idToEdit === evnt.id
+        })
+        completedTaskObject[0].taskTitle = e.target.textContent
+        // save database
+        localStorage.setItem("NutshellDatabase", JSON.stringify(NutshellDatabase))
+    }
+})
 
 module.exports = updateTaskDOM

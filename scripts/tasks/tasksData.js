@@ -36,7 +36,7 @@ const taskFactory = (taskTitle, taskCompletionDate) => {
         },
         "completed": {
             value: false,
-            writable: true
+            enumerable: true
         },
         "timeStamp:": {
             value: Date.now(),
