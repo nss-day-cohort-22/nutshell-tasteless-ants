@@ -1,3 +1,5 @@
+// author: Jesse Page
+
 console.log("articleFactory")
 const submitArticle = require("./articleController")
 const NutshellDatabase = require("../register_login/NutshellDatabase")
@@ -5,7 +7,7 @@ const NutshellDatabase = require("../register_login/NutshellDatabase")
 
 // id generator
 const articleId = function* (from) {
-    let id = 0
+    let id = 1
     while (true) {
         yield from + id
         id ++
@@ -42,7 +44,11 @@ const articleFactory = function(title, synopsis, url) {
         "timestamp": {
             value: timestamp,
             enumerable: true
-        }
+        },
+        // // example from Steve's pagination
+        // "sort": {
+        //     value: (news) => articles = arr.sort((p, n) => n.timestamp - p.timestamp)
+        // }
     })
 }
 
