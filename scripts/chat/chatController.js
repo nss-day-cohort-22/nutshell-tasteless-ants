@@ -4,16 +4,7 @@ let Nutshell = require("../register_login/NutshellDatabase")
 console.log("Nutshell", Nutshell)
 const chatFactory = require("./chatFactory")
 
-// const addToChatWindow = function(chatMessage){
-    //     ulMessages.innerHTML += chatMessage;
-    //     chatShown.forEach(function(job) {
-        //             addToChatWindow("<p class='chatBlockStyle'>")
-        //             addToChatWindow( `${b}` + "<br>")
-        //             addToChatWindow("</p>")
-        //     })
-        // }
-
-let addNewMessage = function() {
+let addNewMessage = function(Nutshell){
     console.log("testing testing")
     console.log("Nutshell", Nutshell)
     const message = document.getElementById("chatInputField").value
@@ -50,9 +41,9 @@ module.exports = addNewMessage
 //     event.preventDefault();
 // });
 
-document.querySelector("#chatInputField").addEventListener("keypress", event => {
-    if(event.key === "Enter") {
-        chatController()
-        document.getElementById("#chatInputField").reset()
-    };
-});
+// document.querySelector("#chatInputField").addEventListener("keypress", event => {
+//     if(event.key === "Enter") {
+//         chatController()
+//         document.getElementById("#chatInputField").reset()
+//     };
+// });
