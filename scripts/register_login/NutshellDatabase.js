@@ -53,7 +53,7 @@ JSON.stringify({
         ],
 
     "tasks": [
-        { "id": 1, "userId": 3, "taskTitle": "Take out garbage", "taskCompletionDate": "9/13/2018", "completed": "false", "timeStamp": "Date.now()" }
+        { "id": 1, "userId": 3, "taskTitle": "Take out garbage", "taskCompletionDate": "9/13/2018", "completed": false, "timeStamp": "Date.now()" }
         ]
     })
     localStorage.setItem("NutshellDatabase", JSONNutshell);
