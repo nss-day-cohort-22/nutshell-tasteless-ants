@@ -12,10 +12,10 @@ let addNewMessage = function(){
     Nutshell.messages.push(chatObject)
 
     let nutshellString = JSON.stringify(Nutshell)
-    localStorage.setItem("NutshellDatabase",NutshellString)
+    localStorage.setItem("NutshellDatabase", nutshellString)
 
     let nutshellJSON = localStorage.getItem("NutshellDatabase")
-    let Nutshell = JSON.parse(nutshellJSON)
+    let NutshellParse = JSON.parse(nutshellJSON)
 
     let chatWindowMessage = document.querySelector(".chatWindow")
     addToChatWindow()
