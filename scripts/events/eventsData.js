@@ -1,4 +1,4 @@
-// The one I HAVE BEEN WORKING ON
+// Author: Courtney Seward
 
 console.log("blah, blah, blah")
 // This page creates an Event Object
@@ -7,10 +7,10 @@ const NutshellDatabase = require("../register_login/NutshellDatabase")
 // let button = document.getElementById("submitRegistration")
 
  // creates event id with a generator function
-    const eventID = function* (from) {
+    const eventID = function* (last) {
         let id = 1 //because of the dummy users
         while (true) {
-            yield from + id
+            yield last + id
             id ++
         }
     }
@@ -18,7 +18,7 @@ const NutshellDatabase = require("../register_login/NutshellDatabase")
     const eventIdGenerator = eventID(lastId.id)
 
  // create another event object out of user input and event form
-    const eventFactory = (eventForm__title, eventForm__location, eventForm__date) => {
+    const eventFactory = (title, location, date) => {
         return Object.create(null, {
             "id": {
                 value: eventIdGenerator.next().value,
@@ -28,16 +28,16 @@ const NutshellDatabase = require("../register_login/NutshellDatabase")
                 value: JSON.parse(sessionStorage.getItem("activeUser")).id,
                 enumerable: true
             },
-            "eventForm__title": {
-                value: eventForm__title,
+            "title": {
+                value: title,
                 enumerable: true
             },
-            "eventForm__location": {
-                value: eventForm__location,
+            "location": {
+                value: location,
                 enumerable: true
             },
-            "eventForm__date": {
-                value:eventForm__date,
+            "date": {
+                value: date,
                 enumerable: true
             }
         })

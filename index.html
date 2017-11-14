@@ -1,67 +1,65 @@
 <!--  author: Jesse Page -->
 <html lang='en'>
-    <head>
-      <meta charset='utf-8'>
-      <title>Tasteless Nutshell!</title>
-      <link rel='stylesheet' href='./css/styles.css'>
-    </head>
+  <head>
+    <meta charset='utf-8'>
+    <title>Tasteless Nutshell!</title>
+    <!-- <link rel="stylesheet" href='.events/events.css' -->
+    <link rel='stylesheet' href='./css/styles.css'>
+  </head>
 
-      <body>
-        <nav></nav>
-      
-      <div id="loginPage">
-        <article id="welcomePage">
-            <h1>Welcome!</h1>  
-        </article>
-
-        <form id="regForm">
-            <div id="userName" class="required"> Username *</div>
-            <input id="check_userName" type="text" name="username" required>
-            <br>
-            <div id="email"> Email address *</div>
-            <br>
-            <input id="check_email" type="text" name="email" required>
-            <br>
-        </form>
-
-        <div id="whichButton"> 
-          <button id="submitRegistration">Register</button>
-          <button id="loginDash">Login</button>
-        </div>
-      </div>
+    <body>
+      <nav></nav>
     
+    <div id="loginPage">
+      <article id="welcomePage">
+          <h1>Welcome!</h1>  
+      </article>
+
+      <form id="regForm">
+          <div id="userName" class="required"> Username *</div>
+          <input id="check_userName" type="text" name="username" required>
+          <br>
+          <div id="email"> Email address *</div>
+          <br>
+          <input id="check_email" type="text" name="email" required>
+          <br>
+      </form>
+
+      <div id="whichButton"> 
+        <button id="submitRegistration">Register</button>
+        <button id="loginDash">Login</button>
+      </div>
+    </div>
+  
 
       <div id="dashboardPage">
         <div id="welcomeUser"></div>
         <section>Dashboard</section>
         <button id="log_out_button">Log-Out</button>
-
-        <div id="events">
-          <!-- this needs to change -->
-            <h1>My Events</h1>
-            <button id="createEventArticle">Create New Event</button> 
-            <!-- this event button toggles hide/show on Card Mode -->
-            <div id="createEventArticle">  
-                <br>
-              <label>Event Name:</label>
-                <br>
-              <input type="text" id="eventForm__title">
-                <br>
-              <label>Date of Event</label>
-                <br>
-              <textarea type="text" id="eventForm__location"></textarea>
-                <br>
-              <label>Location of Event:</label>
-                <br>
-              <input type="text" id="eventForm__date">
-                <br>
-              <br><button id="saveEventForm">Save Article</button>
-              <!-- save button triggers creation functions and then toggles hide/show -->
-                <br>
-            </div>
-            <!-- <div id="article__displayer"></div>  -->
-            <!-- this needs to change -->
-        </div>  
+    <div id="events">
+          <h1>My Events</h1>
+          <button id="createEventArticle">Create New Event</button> 
+          <!-- this event button toggles hide/show on Card Mode -->
+          <div id="createNewEventArticle" class="hidden">  
+            <br>
+          <label>Event Name:</label>
+            <br>
+          <input type="text" id="eventForm__title">
+            <br>
+          <label>Date of Event</label>
+            <br>
+          <textarea type="text" id="eventForm__location"></textarea>
+            <br>
+          <label>Location of Event:</label>
+            <br>
+          <input type="text" id="eventForm__date">
+            <br>
+          <br><button id="saveEventForm">Save Article</button>
+          <!-- save button triggers creation functions and then toggles hide/show -->
+            <br>
+          </div>
+          <div id="events__displayer"></div>
+      </div> 
 
         <h1 id="chat">chat</h1>
         <!-- maybe have chat at the bottom -->
