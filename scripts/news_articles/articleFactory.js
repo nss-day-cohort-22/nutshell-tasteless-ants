@@ -45,10 +45,10 @@ const articleFactory = function(title, synopsis, url) {
             value: timestamp,
             enumerable: true
         },
-        // example from Steve's pagination
-        "sort": {
-            set: (news) => articles = arr.sort((p, n) => n.timestamp - p.timestamp)
-        }
+        // // example from Steve's pagination
+        // "sort": {
+        //     value: (news) => articles = arr.sort((p, n) => n.timestamp - p.timestamp)
+        // }
     })
 }
 

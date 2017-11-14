@@ -1,4 +1,3 @@
-// author: Jesse Page
 console.log("this is fine")
 // let NutshellDatabase =
 //     {

@@ -9,9 +9,11 @@ const updateDashboard = require("./updateDOM")
 const taskFactory = require("./tasks/tasksData")
 const taskEl = require("./tasks/tasks_hide_show")
 const createTaskForm = require("./tasks/tasksSubmit")
+// const updateFriendsDOM = require("./friends/friendsDOM")
 
 pageShown()
 updateDashboard()
+// updateFriendsDOM()
 
 
 

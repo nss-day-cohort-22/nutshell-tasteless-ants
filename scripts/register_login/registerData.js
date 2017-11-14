@@ -29,7 +29,11 @@ let button = document.getElementById("submitRegistration")
             "email": {
                 value: email,
                 enumerable: true
-            }
+            },
+            "picture": {
+                value: url("http://placeimg.com/100/100/animals"),
+                enumerable: true
+            },
         })
     }
 
