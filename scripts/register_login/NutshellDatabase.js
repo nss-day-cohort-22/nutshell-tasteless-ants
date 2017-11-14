@@ -6,29 +6,33 @@ console.log("this is fine")
 //             "id": 1,
 //             "userName": "Courtney",
 //             "email": "courtney@buttz.com",
+//             "picture": "../images/blondedog.jpg"
 //         },
 //         {
 //             "id": 2,
 //             "userName": "Keith",
 //             "email": "keith@buttz.com",
+//             "picture": "../images/headphone-dog.jpg"
 //         },
 //         {
 //             "id": 3,
 //             "userName": "Ryan",
-//             "email": "ryan@buttz.com"
+//             "email": "ryan@buttz.com",
+//             "picture": "../images/UTdog.jpg"
 //         },
 //         {
 //             "id": 4,
 //             "userName": "Jesse",
-//             "email": "jesse@buttz.com"
+//             "email": "jesse@buttz.com",
+//             "picture": "../images/browndog.jpg"
 //         },
-            // "friends" : [
-                //     {userName: Jesse,
-                //     id: 2},
-                //     {userName: Ryan,
-                //     id: 1},
-                // ]
-//         ],
+//             // "friends" : [
+//             //         {userName: Jesse,
+//             //         id: 2},
+//             //         {userName: Ryan,
+//             //         id: 1},
+//             //     ]
+//     ],
 
 //     "events": [
 //         {
@@ -45,8 +49,8 @@ console.log("this is fine")
 //         ],
 
 //     "news": [
-//         { "id": 1, "userId": 2, "title": "Monkeybuttz", "synopsis": "Check out this recent discovery about Monkeybuttz", "url": "www.yep.com" }
-//         { "id": 2, "userId": 2, "title": "Monkeybuttz", "synopsis": "Check out this recent discovery about Monkeybuttz", "url": "www.yep.com" }
+//         { "id": 1, "userId": 2, "title": "Monkeybuttz", "synopsis": "Check out this recent discovery about Monkeybuttz", "url": "www.yep.com" },
+//         { "id": 2, "userId": 2, "title": "Monkeybuttz", "synopsis": "Check out this recent discovery about Monkeybuttz", "url": "www.yep.com" },
 //         { "id": 3, "userId": 2, "title": "Monkeybuttz", "synopsis": "Check out this recent discovery about Monkeybuttz", "url": "www.yep.com" }
 //         ],
 

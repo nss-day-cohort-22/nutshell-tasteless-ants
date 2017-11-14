@@ -10,15 +10,16 @@ let registerOrLogin = function(event) {
     let userName = document.getElementById("check_userName").value
     let email = document.getElementById("check_email").value
     console.log(event.target.id)
-    updateArticleDOM()
     if (event.target.id === "submitRegistration") {
-       const activeUser = userFactory(userName, email)
-       NutshellDatabase.users.push(activeUser)
-       localStorage.setItem("NutshellDatabase", JSON.stringify(NutshellDatabase));
-       console.log(NutshellDatabase.users)
+        const activeUser = userFactory(userName, email)
+        NutshellDatabase.users.push(activeUser)
+        localStorage.setItem("NutshellDatabase", JSON.stringify(NutshellDatabase));
+        console.log(NutshellDatabase.users)
         activeUserSet(activeUser)
+        updateArticleDOM()
     } else { //(event.target.id === "loginDash")
     userLogin(userName, email)
+    updateArticleDOM()
 }
 // Has to be called in order to run hide or show login or dashboard pages
 pageShown()
@@ -39,4 +40,14 @@ function activeUserSet(activeUser) {
     sessionStorage.setItem("activeUser", JSON.stringify(activeUser));
 }
 
+// display welcome "active user" in at top of browser
+const currentActiveUser = JSON.parse(sessionStorage.getItem("activeUser"))
+let welcomeEl = document.getElementById("welcomeUser")
 
+let welcomeActiveUser = function() {
+    welcomeEl.innerHTML += `
+    <h1>Welcome ${currentActiveUser.userName}!</h1>
+    `
+}
+
+module.exports = welcomeActiveUser

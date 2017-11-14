@@ -31,11 +31,10 @@ let button = document.getElementById("submitRegistration")
                 enumerable: true
             },
             "picture": {
-                value: url("http://placeimg.com/100/100/animals"),
+                value: "http://placeimg.com/100/100/animals",
                 enumerable: true
             },
         })
     }
-
 
 module.exports = userFactory
