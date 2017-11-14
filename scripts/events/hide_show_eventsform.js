@@ -14,24 +14,32 @@ let updateEventDom = function(){
     eventsEl.innerHTML= ""
     for (let i = 0; i < NutshellDatabase.events.length; i++) {
         let currentEvent = NutshellDatabase.events[i];
+        let writeToDom = ""
         // create and if/else statment that finds the first element in the array and style it
-// if (currentEvent[0]) {
-//     return
-
-// }
-        console.log(currentEvent)
-
-
+            if (i !== 0){
+                writeToDom =
+                `<div id="${currentEvent.id}">
+                    <div class= "editEventButton" id= "editEventTitle" contenteditable = "true"> ${currentEvent.title}</div>
+                    <div class= "editEventButton" id= "editEventLocation" contenteditable = "true"> ${currentEvent.location}</div>
+                    <div class= "editEventButton" id= "editEventdate" contenteditable = "true"> ${currentEvent.date}</div>
+               <button class="delete_article" id = "${currentEvent.id}">Delete</button> <button class = "editEventButton">Edit Event</button>
+               </div>`
+                // return "${newEventStyled.class}"
+        console.log("if ", currentEvent)
+            } else {
+                console.log("else", currentEvent)
+                writeToDom =
+                `<div id="${currentEvent.id}" class="newEventStyled">
+                    <div class= "editEventButton" id= "editEventTitle" contenteditable = "true"> ${currentEvent.title}</div>
+                    <div class= "editEventButton" id= "editEventLocation" contenteditable = "true"> ${currentEvent.location}</div>
+                    <div class= "editEventButton" id= "editEventdate" contenteditable = "true"> ${currentEvent.date}</div>
+               <button class="delete_article" id = "${currentEvent.id}">Delete</button> <button class = "editEventButton">Edit Event</button>
+               </div>`
+            }
         // call the IDs we want to collect from the Database
         // assign a class here that you will style with CSS
         // confused about placement for new class name: <div class="${newEventStyled.class}"> </div>
-        let writeToDom =
-        `<div id="${currentEvent.id}">
-            <div class= "editEventButton" id= "editEventTitle" contenteditable = "true"> ${currentEvent.title}</div>
-            <div class= "editEventButton" id= "editEventLocation" contenteditable = "true"> ${currentEvent.location}</div>
-            <div class= "editEventButton" id= "editEventdate" contenteditable = "true"> ${currentEvent.date}</div>
-       <button class="delete_article" id = "${currentEvent.id}">Delete</button> <button class = "editEventButton">Edit Event</button>
-       </div>`
+
        eventsEl.innerHTML += writeToDom
     }
     addListeners()

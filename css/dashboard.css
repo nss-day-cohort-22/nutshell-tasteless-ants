@@ -1,0 +1,48 @@
+/* hiding/showing login, dashboard, etc... */
+
+.hidden {
+    display: none;
+    align-content: center;
+}
+
+
+#events,
+#news,
+#tasks,
+#chat,
+#friends {
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin: 7%;
+}
+
+#article_create_card,
+#task_create_card,
+#createNewEventArticle {
+    /* justify-content: center; */
+    border: 1px solid black;
+    text-align: center;
+    /* padding: 20px; */
+    margin: 0 20%;
+    width: auto;
+}
+
+
+/* Events Styling Only */
+/* this class styles my first Event Entry only */
+.newEventStyled {
+    font-weight: bold;
+    background-color: rgba(255, 192, 204, 0.678);
+    font-size: 22px;
+}
+/* Event IDs */
+/* these ids style the "Events" section only */
+#createNewEventArticle {
+    background-color: rgba(128, 128, 128, 0.548);
+}
+
+#events {
+        background-color: rgba(128, 128, 128, 0.548);
+}

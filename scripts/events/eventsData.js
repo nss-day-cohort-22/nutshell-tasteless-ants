@@ -1,4 +1,7 @@
 // Author: Courtney Seward
+// Goal of the Module:
+// Step 1: Create an event generator function that creates an event id
+// Step 2: Create a factory function that allows the user to continually create new event IDs and export that Event Factory
 
 console.log("blah, blah, blah")
 // This page creates an Event Object
@@ -6,7 +9,7 @@ const NutshellDatabase = require("../register_login/NutshellDatabase")
 // const {registerOrLogin, activeUserSet} = require("./registerVerify")
 // let button = document.getElementById("submitRegistration")
 
- // creates event id with a generator function
+ // creates an event id with a generator function
     const eventID = function* (last) {
         let id = 1 //because of the dummy users
         while (true) {

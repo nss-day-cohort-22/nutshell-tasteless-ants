@@ -1,4 +1,8 @@
 // Author: Courtney Seward
+// Goal of the Module:
+// Step 1: call your requirments
+// Step 2:
+
     // import Events factory and Nutshell Database
 const eventFactory = require("../events/eventsData")
 const NutshellDatabase = require("../register_login/NutshellDatabase")
