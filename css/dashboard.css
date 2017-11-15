@@ -3,7 +3,7 @@
     display: none;
 }
 
-#dashboardPage {
+/* #dashboardPage { */
     
 html {
     font-family: 'Quattrocento', serif;
@@ -28,9 +28,7 @@ html {
     text-align: center;
     justify-content: center;
     margin-bottom: 20px;
-    max-width: 600px;
-#chat,
-#friends {
+    /* max-width: 600px; */
     border: 1px solid ;
     border-radius: 3px;
     filter:drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.38));
@@ -39,6 +37,11 @@ html {
     justify-content: center;
     margin: 7%;
 }
+
+/* #chat,
+#friends {
+    
+} */
 
 #article_create_card,
 #task_create_card,
@@ -52,9 +55,9 @@ html {
     width: auto;
 }
 
-html {
+/* html {
     font-family: 'Quattrocento', serif;
-    }
+    } */
 
 /* 
 .chatWindow {
