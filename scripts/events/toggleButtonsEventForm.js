@@ -1,4 +1,7 @@
 // Author: Courtney Seward
+// Goal of the Module:
+// hide and show function that displays differnet aspects of the event box and form
+
 function createEventCard() {
     if (event.target.id === "createEventArticle") {
         document.getElementById("createNewEventArticle").classList.remove("hidden")

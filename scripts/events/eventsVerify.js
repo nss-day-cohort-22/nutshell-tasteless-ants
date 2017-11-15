@@ -1,4 +1,8 @@
 // Author: Courtney Seward
+// Goal of the Module:
+// Step 1: call your requirments at the top of the page
+// Step 2: Update your article DOM to the users specific info from the event parameter and store the event data in the Nutshell Database and call it to the DOM
+
     // import Events factory and Nutshell Database
 const eventFactory = require("../events/eventsData")
 const NutshellDatabase = require("../register_login/NutshellDatabase")
@@ -13,7 +17,6 @@ let submitEvent = function(event) {
 
     // Create new variable that calls event Data and parameters
     const finalEventForm = eventFactory(title, location, date)
-
 
     // push new object into a database
     NutshellDatabase.events.push(finalEventForm)

@@ -1,3 +1,5 @@
+// Authors: Team and Instructor Effort
+// Goal of the Module: Stores the value from user input. When register is clicked it creates an active user, pushes the new user into Nutshell Database, sets it into local storage, and then populates the DOM. When login is clicked it sets the active user into session storage and populates the DOM
 console.log("register user/email")
 const pageShown = require("./dashboard_hide_show")
 const updateArticleDOM = require("../news_articles/dom")
