@@ -42,7 +42,7 @@ module.exports = function(grunt) {
         },
         eslint: {
         src: ["scripts/**/*.js", "!node_modules/**?*.js"]
-      }
+      },
     });
 
       // Load the plugin that provides the "uglify" task.

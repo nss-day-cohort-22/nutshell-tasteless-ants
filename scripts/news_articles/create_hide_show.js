@@ -1,4 +1,5 @@
 // author: Jesse Page
+// this toggles the hide and show function for the create new article card
 function createCard() {
     if (event.target.id === "create_new_article_button") {
         document.getElementById("article_create_card").classList.remove("hidden")

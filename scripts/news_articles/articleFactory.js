@@ -1,5 +1,5 @@
 // author: Jesse Page
-
+// this will create a new object with title, synopsis, url parameters and give it a list of properties
 console.log("articleFactory")
 const submitArticle = require("./articleController")
 const NutshellDatabase = require("../register_login/NutshellDatabase")
