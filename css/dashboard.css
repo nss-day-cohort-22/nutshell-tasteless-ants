@@ -30,7 +30,7 @@ html {
     font-family: 'Quattrocento', serif;
     }
 
-
+/* 
 .chatWindow {
     background-color: white;
     width: 1000px;
@@ -43,13 +43,8 @@ html {
     background-color: cornsilk;
 
 }
-
-#article_create_card {
-    border: 2px solid black;
-    text-align: center;
-}
  
-chat {
+#chat {
     color: #804000;
     height: 250px;
     width: 100%;
@@ -59,4 +54,4 @@ chat {
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px; 
-}
+} */

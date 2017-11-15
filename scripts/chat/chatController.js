@@ -47,7 +47,7 @@ let addToChatWindow = function(){
         `
     })
     function editMessage() {
-        let replaceWith = "${chat.userName}: ${chat.message}";
+        let replaceWith = `${chat.userName}: ${chat.message}`;
         document.getElementById("EditChat").innerHTML = replaceWith;
     }
 }
@@ -55,6 +55,7 @@ let addToChatWindow = function(){
 //a 1 second timed refresh of the database
 let dbCheck = setInterval(dbCheckRefresh,1000)
     function dbCheckRefresh(){
+        Nutshell
         let nutshellJSON = localStorage.getItem("NutshellDatabase");
         JSON.parse(nutshellJSON);
         console.log("hi")
