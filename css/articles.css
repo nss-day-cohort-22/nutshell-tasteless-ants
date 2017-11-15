@@ -1,0 +1,27 @@
+#news {
+    background-color: cornflowerblue;
+    box-shadow: 10px 10px 5px #888888;
+}
+#article_create_card {
+    background-color: silver
+
+}
+#news h1 {
+    border-bottom: 10px double moccasin;
+    text-shadow:  0px 0px 30px rgb(198, 236, 255), 
+    0px 0px 30px rgb(198, 236, 255), 
+    0px 0px 30px rgb(198, 236, 255);
+}
+#news h2 {
+    text-shadow:  0px 0px 30px rgb(198, 236, 255), 
+    0px 0px 30px rgb(198, 236, 255), 
+    0px 0px 30px rgb(198, 236, 255);
+}
+#create_new_article_button,
+#submit_article_button {
+    margin-bottom: 20px;
+}
+#article_create_card,
+.delete_article {
+    margin-bottom: 20px;
+}

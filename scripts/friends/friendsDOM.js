@@ -11,9 +11,11 @@ let updateFriendsDOM = function() {
     for (let i = 0; i < NutshellDatabase.users.length; i++) {
         let currentUser = NutshellDatabase.users[i];
         friendEL.innerHTML += `
-        <div>${currentUser.userName}</div>
-        <div><img src="${currentUser.picture}" width="100"></div>
-        <button type="button" class="addFriend">Add Friend</button>
+        <div class="friendsToAdd">
+            <div>${currentUser.userName}</div>
+            <div><img src="${currentUser.picture}" width="100"></div>
+            <button type="button" class="addFriend">Add Friend</button>
+        </div>
         `
     }
 }
