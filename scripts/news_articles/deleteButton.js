@@ -1,4 +1,5 @@
 // author: Jesse Page
+// this will remove the targeted article from DOM and NutshellDatabase
 const NutshellDatabase = require("../register_login/NutshellDatabase")
 
 let deleteMaster = function () {

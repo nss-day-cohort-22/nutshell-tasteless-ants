@@ -1,4 +1,5 @@
 // author: Jesse Page
+// this will get the text in the input fields title, synopsis, url and run it through the object factory, push that object in Nutshell Database, set it in local storage and then populate the DOM when the "submit article" button is clicked
 console.log("articleController")
 const articleFactory = require("./articleFactory")
 const NutshellDatabase = require("../register_login/NutshellDatabase")

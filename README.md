@@ -1,3 +1,10 @@
+To run The Tasteless Nutshell:
+1) Clone repository to local drive
+2) Launch in browser using http-server command
+3) Register a new account using your email and choose a username
+4) Upon clicking the Register button, you will be taken to your personal Dashboard where you can create events, tasks, article posts, chat with friends and add new friends!
+
+
 # Nutshell: The Information Dashboard
 
 Nutshell is a new product offering that you have been tasked with building. It's a dashboard for people to use to organize their daily tasks, events, news article, friends, and chat messages.
