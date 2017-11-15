@@ -2,6 +2,7 @@ console.log("register user/email")
 const pageShown = require("./dashboard_hide_show")
 const updateArticleDOM = require("../news_articles/dom")
 const updateEventDom = require("../events/hide_show_eventsform")
+const {addToChatWindow}= require("../chat/chatController")
 
 // import userfacotry
 const userFactory = require("./registerData")
@@ -21,11 +22,13 @@ let registerOrLogin = function(event) {
         updateTaskDOM()
         updateArticleDOM()
         updateEventDom()
+        addToChatWindow()
     } else { //(event.target.id === "loginDash")
         userLogin(userName, email)
         updateTaskDOM()
         updateArticleDOM()
         updateEventDom()
+        addToChatWindow()
 }
 // Has to be called in order to run hide or show login or dashboard pages
 pageShown()

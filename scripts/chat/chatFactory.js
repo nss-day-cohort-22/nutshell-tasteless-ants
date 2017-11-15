@@ -1,10 +1,13 @@
-const chatId = function* () {
+//author Keith
+
+const chatId = function* (last) {
     let id = 1
     while (true) {
-        yield id
+        yield last + id
         id ++
     }}
 
+const lastId = NutshellDatabase.messages[NutshellDatabase.messages.length - 1].id || {id:0}
 let chatMessageId = chatId()
 
 let chatMessage = function(message){
@@ -16,6 +19,10 @@ let chatMessage = function(message){
         },
         userId: {
             value: JSON.parse(sessionStorage.getItem("activeUser")).id,
+            enumerable: true
+      },
+        userName: {
+            value: JSON.parse(sessionStorage.getItem("activeUser")).userName,
             enumerable: true
       },
         message: {

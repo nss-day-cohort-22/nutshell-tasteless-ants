@@ -17,6 +17,7 @@ const deleteTasks = require("./tasks/tasksDelete")
 const createTaskCard = require("./tasks/tasksFields")
 const logOut = require("./register_login/logOut")
 const updateFriendsDOM = require("./friends/friendsDOM")
+
 // const editTheCurrentEvent = require("./events/eventsButton")
 pageShown()
 
