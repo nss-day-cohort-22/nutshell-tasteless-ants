@@ -1,3 +1,4 @@
+// Authors: Team and Instructor Effort
 // Ryan McPherson - Pushes seeded database into localstorage IF there isnt anything there, and won't if there is
 
 let JSONNutshell = localStorage.getItem("NutshellDatabase")

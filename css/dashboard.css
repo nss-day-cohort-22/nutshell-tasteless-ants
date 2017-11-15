@@ -1,48 +1,69 @@
 /* hiding/showing login, dashboard, etc... */
-
 .hidden {
     display: none;
-    align-content: center;
+}
+    
+html {
+    font-family: 'Quattrocento', serif;
+    background-color: lightcyan;
 }
 
+#welcomeUser {
+    width: 70%;
+}
+
+#log_out_button {
+    right: 20px;
+    float: right;
+    display: block;
+}
 
 #events,
 #news,
 #tasks,
 #chat,
 #friends {
-    border: 1px solid black;
+    border: 1px solid ;
+    border-radius: 3px;
+    filter:drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.38));
+    background-color: white;
     text-align: center;
     justify-content: center;
-    margin-bottom: 20px;
     margin: 7%;
 }
 
 #article_create_card,
 #task_create_card,
 #createNewEventArticle {
-    /* justify-content: center; */
     border: 1px solid black;
+    border-radius: 3px;
+    filter:drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.38));
+    background-color: white;
     text-align: center;
-    /* padding: 20px; */
     margin: 0 20%;
     width: auto;
 }
 
-
-/* Events Styling Only */
+/* Events Class Styling Only */
 /* this class styles my first Event Entry only */
 .newEventStyled {
+    /* box-shadow: 10px 10px 5px #888888; */
     font-weight: bold;
-    background-color: rgba(255, 192, 204, 0.678);
+    background-color:  rgb(33, 199, 199);
     font-size: 22px;
 }
 /* Event IDs */
 /* these ids style the "Events" section only */
 #createNewEventArticle {
     background-color: rgba(128, 128, 128, 0.548);
+    margin-bottom: 5%;
+    padding-bottom: 5%;
 }
 
 #events {
         background-color: rgba(128, 128, 128, 0.548);
+        margin-bottom: 20px;
+        padding-bottom: 5%;
 }
+
+

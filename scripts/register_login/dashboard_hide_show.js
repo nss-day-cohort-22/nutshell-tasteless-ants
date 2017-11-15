@@ -1,4 +1,5 @@
-// This hides/shows the login or dashboard based on whether the user is "active"
+// Authors: Team and Instructor Effort!
+// This hides/shows the login or dashboard based on whether the user is "active" user or not
 function pageShown() {
     const showCurrentUserPage = JSON.parse(sessionStorage.getItem("activeUser"))
     console.log("In pageShown")

@@ -1,6 +1,8 @@
 // Author: Courtney Seward
+// Goal of the Module:
+// this module styles the events depending on their array order
+// Editing Events: when I call the specific class that holds the editEventButton, then a for loop to runs through the speciifc ids within the Event Button Class, creates an event listener for when the new edits have been made you can submit the "Edit Event" button, call the specific ids,when the event is called with a click on the Edit Event Button it will store the new information in the Nutshell Database abd need to add it to the local storage.
 
-// this module populates the events once the event form is submitted and the page is refreshed
 const deleteEventArrays = require("./deleteButton")
 
 console.log("Event Dom")
@@ -12,11 +14,16 @@ let eventsEl = document.getElementById("events__displayer")
 
 let updateEventDom = function(){
     eventsEl.innerHTML= ""
+    let writeToDom = ""
+    let counter = 0
+    const activeUser = JSON.parse(sessionStorage.getItem("activeUser"))
     for (let i = 0; i < NutshellDatabase.events.length; i++) {
         let currentEvent = NutshellDatabase.events[i];
-        let writeToDom = ""
-        // create and if/else statment that finds the first element in the array and style it
-            if (i !== 0){
+        // this if statment allows each registered user to have their own events/ wont spill over from one user to another
+            if (currentEvent.userID === activeUser.id) {
+        // create an if/else statment that finds the first element in the array and style it
+        // if the value of the array is not [0 style it accordingly and if it is an array of [0] then style it specifically with that class
+            if (counter !== 0){
                 writeToDom =
                 `<div id="${currentEvent.id}">
                     <div class= "editEventButton" id= "editEventTitle" contenteditable = "true"> ${currentEvent.title}</div>
@@ -24,7 +31,7 @@ let updateEventDom = function(){
                     <div class= "editEventButton" id= "editEventdate" contenteditable = "true"> ${currentEvent.date}</div>
                <button class="delete_article" id = "${currentEvent.id}">Delete</button> <button class = "editEventButton">Edit Event</button>
                </div>`
-                // return "${newEventStyled.class}"
+                // return "${newEventStyled.class}" if it is the first item in the array
         console.log("if ", currentEvent)
             } else {
                 console.log("else", currentEvent)
@@ -36,11 +43,10 @@ let updateEventDom = function(){
                <button class="delete_article" id = "${currentEvent.id}">Delete</button> <button class = "editEventButton">Edit Event</button>
                </div>`
             }
-        // call the IDs we want to collect from the Database
-        // assign a class here that you will style with CSS
-        // confused about placement for new class name: <div class="${newEventStyled.class}"> </div>
+            eventsEl.innerHTML += writeToDom
+            counter ++
+        }
 
-       eventsEl.innerHTML += writeToDom
     }
     addListeners()
     deleteEventArrays()
