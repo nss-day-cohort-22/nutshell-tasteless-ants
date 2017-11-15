@@ -17,3 +17,11 @@
     0px 0px 30px rgb(198, 236, 255), 
     0px 0px 30px rgb(198, 236, 255);
 }
+#create_new_article_button,
+#submit_article_button {
+    margin-bottom: 20px;
+}
+#article_create_card,
+.delete_article {
+    margin-bottom: 20px;
+}

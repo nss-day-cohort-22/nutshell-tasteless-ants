@@ -1,21 +1,32 @@
-html {
-font-family: 'Quattrocento', serif;
-}
 /* hiding/showing login, dashboard, etc... */
 .hidden {
     display: none;
 }
+    
+html {
+    font-family: 'Quattrocento', serif;
+    background-color: lightcyan;
+}
 
+#welcomeUser {
+    width: 70%;
+}
 
-/* #dashboardPage {
-} */
+#log_out_button {
+    right: 20px;
+    float: right;
+    display: block;
+}
 
 #events,
 #news,
 #tasks,
 #chat,
 #friends {
-    border: 1px solid black;
+    border: 1px solid ;
+    border-radius: 3px;
+    filter:drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.38));
+    background-color: white;
     text-align: center;
     justify-content: center;
     margin: 7%;
@@ -25,7 +36,14 @@ font-family: 'Quattrocento', serif;
 #task_create_card,
 #createNewEventArticle {
     border: 1px solid black;
+    border-radius: 3px;
+    filter:drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.38));
+    background-color: white;
     text-align: center;
     margin: 0 20%;
     width: auto;
+}
+#loginPage {
+    margin-top: 20%;
+    text-align: center;
 }
