@@ -1,3 +1,5 @@
+// Authors: Team and Instructor Effort
+// Goal of the Module: Create a User object with a specific id for that user
 console.log("RegisterData is working!")
 
 const NutshellDatabase = require("./NutshellDatabase")

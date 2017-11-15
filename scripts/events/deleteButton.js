@@ -1,4 +1,5 @@
 // Author: Courtney Seward
+// Goal of the Module:
 
 const NutshellDatabase = require("../register_login/NutshellDatabase")
 const hideShowEventsForm = require("../events/hide_show_eventsform")

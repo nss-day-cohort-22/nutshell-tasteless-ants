@@ -1,3 +1,4 @@
+// Authors: Team and Instructor Effort
 // Jesse and Ryan - Removes "active" user from session storage, cancelling the current dashboard session.
 
 const logOutButton = document.getElementById("log_out_button")

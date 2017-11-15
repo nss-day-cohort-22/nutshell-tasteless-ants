@@ -43,6 +43,30 @@ html {
     margin: 0 20%;
     width: auto;
 }
+
+/* Events Class Styling Only */
+/* this class styles my first Event Entry only */
+.newEventStyled {
+    /* box-shadow: 10px 10px 5px #888888; */
+    font-weight: bold;
+    background-color:  rgb(33, 199, 199);
+    font-size: 22px;
+}
+/* Event IDs */
+/* these ids style the "Events" section only */
+#createNewEventArticle {
+    background-color: rgba(128, 128, 128, 0.548);
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+}
+
+#events {
+        background-color: rgba(128, 128, 128, 0.548);
+        margin-bottom: 20px;
+        padding-bottom: 5%;
+}
+
+
 #loginPage {
     margin-top: 20%;
     text-align: center;
