@@ -1,0 +1,31 @@
+html {
+font-family: 'Quattrocento', serif;
+}
+/* hiding/showing login, dashboard, etc... */
+.hidden {
+    display: none;
+}
+
+
+/* #dashboardPage {
+} */
+
+#events,
+#news,
+#tasks,
+#chat,
+#friends {
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+    margin: 7%;
+}
+
+#article_create_card,
+#task_create_card,
+#createNewEventArticle {
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 20%;
+    width: auto;
+}
