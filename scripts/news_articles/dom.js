@@ -1,4 +1,5 @@
 // author: Jesse Page
+// this populates the DOM to display newly created articles in the browser
 console.log("Article Dom")
 const NutshellDatabase = require("../register_login/NutshellDatabase")
 const deleteArticleArrays = require("./deleteButton")
