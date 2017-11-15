@@ -1,8 +1,9 @@
 
+/* Tasks */
 
-
-/* .tasks > h2,
-.tasks > p {    
-    display: inline;
-    border: 2px solid black;
-} */
+#create_new_task,
+#submit_task_button,
+#task_create_card,
+.delete_task {
+    margin-bottom: 20px;
+}

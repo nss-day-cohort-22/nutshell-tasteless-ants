@@ -12,11 +12,6 @@ html {
     width: 70%;
 }
 
-#loginPage {
-    margin-top: 20%;
-    text-align: center;
-}
-
 #log_out_button {
     right: 20px;
     float: right;
@@ -49,11 +44,7 @@ html {
     width: auto;
 }
 
-/* Tasks */
-
-#create_new_task,
-#submit_task_button,
-#task_create_card,
-.delete_task {
-    margin-bottom: 20px;
+#loginPage {
+    margin-top: 20%;
+    text-align: center;
 }
