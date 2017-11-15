@@ -16,7 +16,7 @@ let updateTaskDOM = function () {
         const activeUserInfo = JSON.parse(sessionStorage.getItem("activeUser"))
     if (currentTask.userID === activeUserInfo.id && currentTask.completed  === false) {
         let writeTaskDOM = `
-            <div id="${currentTask.id}">
+            <div class="tasks" id="${currentTask.id}">
                 <h2>To Do: </h2><div class="edit_task" contenteditable="true"> ${currentTask.taskTitle}</div>
                 <p>Due Date: ${currentTask.taskCompletionDate}</p>
                 <button class="delete_task">✓</button>

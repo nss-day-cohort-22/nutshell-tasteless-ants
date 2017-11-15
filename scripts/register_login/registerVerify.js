@@ -21,11 +21,13 @@ let registerOrLogin = function(event) {
         updateTaskDOM()
         updateArticleDOM()
         updateEventDom()
+        welcomeActiveUser()
     } else { //(event.target.id === "loginDash")
         userLogin(userName, email)
         updateTaskDOM()
         updateArticleDOM()
         updateEventDom()
+        welcomeActiveUser()
 }
 // Has to be called in order to run hide or show login or dashboard pages
 pageShown()

@@ -1,0 +1,9 @@
+
+/* Tasks */
+
+#create_new_task,
+#submit_task_button,
+#task_create_card,
+.delete_task {
+    margin-bottom: 20px;
+}
