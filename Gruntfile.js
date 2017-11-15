@@ -1,37 +1,38 @@
 module.exports = function(grunt) {
-
-      // Project configuration.
-      grunt.initConfig({
-        pkg: grunt.file.readJSON("package.json"),
-        watch: {
-            scripts: {
-              files: ["scripts/**/*.js", "!node_modules/**?*.js"],
-              tasks: ["eslint", "browserify"],
-              options: {
-                spawn: false,
+  
+        // Project configuration.
+        grunt.initConfig({
+          pkg: grunt.file.readJSON("package.json"),
+          watch: {
+              scripts: {
+                files: ["scripts/**/*.js", "!node_modules/**?*.js"],
+                tasks: ["eslint", "browserify"],
+                options: {
+                  spawn: false,
+                },
               },
             },
-          },
-
-        uglify: {
-          options: {
-            banner: "/*! <%= pkg.name %> <%= grunt.template.today(\"yyyy-mm-dd\") %> */\n"
-          },
-
-        build: {
-            files: [{
-                expand: true,
-                cwd: "scripts",
-                src: "*.js",
-                dest: "build",
-                ext: ".min.js"
-                }]
-        }
-    },
-        browserify: {
-          dist: {
-            files: {
-              "build/bundle.js": ["scripts/main.js"],
+  
+          uglify: {
+            options: {
+              banner: "/*! <%= pkg.name %> <%= grunt.template.today(\"yyyy-mm-dd\") %> */\n"
+            },
+  
+          build: {
+              files: [{
+                  expand: true,
+                  cwd: "scripts",
+                  src: "*.js",
+                  dest: "build",
+                  ext: ".min.js"
+                  }]
+          }
+      },
+          browserify: {
+            dist: {
+              files: {
+                "build/bundle.js": ["scripts/main.js"],
+              },
             },
           },
           options: {

@@ -5,6 +5,7 @@
     <title>Tasteless Nutshell!</title>
     <!-- <link rel="stylesheet" href='.events/events.css' -->
     <link rel='stylesheet' href='./css/dashboard.css'>
+    <link rel='stylesheet' href='./css/chatcss.css'>
     <link rel='stylesheet' href='./css/friends.css'>
     <link rel='stylesheet' href='./css/articles.css'>
     <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
@@ -61,9 +62,6 @@
           </div>
           <div id="events__displayer"></div>
       </div> 
-
-        <h1 id="chat">chat</h1>
-        <!-- maybe have chat at the bottom -->
         
         <div id="news">
           <h1>News</h1>
@@ -118,10 +116,18 @@
         <h1>Friends</h1>
         <div id="friend__displayer"></div>
         </div>
+        
+              <div id="chat">
+                  <div class="chatWindow">
+                  </div>
+                  <br>
+                    <input type="text" id="chatInputField">
+                    <button id="chatSendButton">Send</button>
+                  </div>
 
       </div>
-      
-      
+      <br>
+
         <footer></footer>
       <script src='./build/bundle.js'></script>
       </body>
