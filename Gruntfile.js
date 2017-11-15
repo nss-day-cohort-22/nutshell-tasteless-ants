@@ -34,6 +34,11 @@ module.exports = function(grunt) {
               "build/bundle.js": ["scripts/main.js"],
             },
           },
+          options: {
+            browserifyOptions: {
+                debug: true,
+            },
+        },
         },
         eslint: {
         src: ["scripts/**/*.js", "!node_modules/**?*.js"]
